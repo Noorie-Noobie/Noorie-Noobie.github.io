@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SF Restaurant Survival | Arshnoor Bhatia</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary">
+    <a class="brand" href="../index.html">Arshnoor Bhatia</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="https://github.com/Noorie-Noobie">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="case-main">
+    <section class="case-hero">
+      <div>
+        <p class="eyebrow">Data engineering / database design</p>
+        <h1>SF Restaurant Survival & Media Coverage</h1>
+        <p class="lede">A restaurant data infrastructure project connecting San Francisco business lifecycle records with editorial restaurant coverage to study survival, visibility, and neighborhood patterns.</p>
+      </div>
+      <img class="case-image" src="../assets/ddr-cover.png" alt="SF Restaurant Survival report cover">
+    </section>
+
+    <section class="case-section">
+      <h2>Problem</h2>
+      <p>Restaurant openings, closures, neighborhoods, and editorial coverage live in separate sources, making it hard to analyze survival patterns or media visibility from one dataset.</p>
+    </section>
+
+    <section class="case-section columns">
+      <div>
+        <h2>What I Built</h2>
+        <ul>
+          <li>Built the SF OpenData SODA API pipeline and editorial web scraper using Python requests and BeautifulSoup.</li>
+          <li>Designed RegEx-based normalization for restaurant names and addresses.</li>
+          <li>Matched records with address-first and name-fallback logic, then exported cleaned JSON for MongoDB analysis collections.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Evidence</h2>
+        <ul>
+          <li>Collected 14,742 SF OpenData records and 511 scraped editorial records.</li>
+          <li>Deduplicated the editorial source to 247 restaurant records across 16 neighborhoods.</li>
+          <li>Observed featured restaurants averaging 3,047 days in lifespan vs. 2,092 days for non-featured restaurants in the dataset.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>Tech Stack</h2>
+      <p class="chip-row"><span>Python</span><span>SODA API</span><span>Requests</span><span>BeautifulSoup</span><span>RegEx</span><span>JSON</span><span>MongoDB</span><span>Data modeling</span></p>
+    </section>
+  </main>
+</body>
+</html>

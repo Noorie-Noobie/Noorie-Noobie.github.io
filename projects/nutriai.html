@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NutriAI | Arshnoor Bhatia</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary">
+    <a class="brand" href="../index.html">Arshnoor Bhatia</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="https://github.com/Noorie-Noobie">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="case-main">
+    <section class="case-hero">
+      <div>
+        <p class="eyebrow">Health-tech recommender system</p>
+        <h1>NutriAI</h1>
+        <p class="lede">A safety-first meal-planning app that generates personalized 7-day household meal plans using clinical filters, allergy exclusions, nutrition analytics, and recommendation ranking.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/Noorie-Noobie/BAX423_NutriAI_Final">GitHub</a>
+        </div>
+      </div>
+      <img class="case-image" src="../assets/nutriai-cover.png" alt="NutriAI technical brief preview">
+    </section>
+
+    <section class="case-section">
+      <h2>Problem</h2>
+      <p>People with clinical conditions, allergies, and household dietary constraints need meal plans that are safe, diverse, nutritionally balanced, and explainable.</p>
+    </section>
+
+    <section class="case-section columns">
+      <div>
+        <h2>What I Built</h2>
+        <ul>
+          <li>Built a Streamlit application with household intake, calendar planning, nutrition dashboard, grocery planner, restaurant-risk mode, and downloads.</li>
+          <li>Implemented hard filters for allergies, cross-contact, clinical conditions, diet types, and cultural restrictions before ranking meals.</li>
+          <li>Used Bloom-filter-style token screening, hash-embedding preference similarity, multi-factor scoring, diversity-aware assignment, and nutrient rebalancing.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Evidence</h2>
+        <ul>
+          <li>12,000-row USDA-derived food snapshot, 99 structured meal candidates, and 18 restaurant-style menu records.</li>
+          <li>Persona tests passed for IBS, GERD, diabetes, and hypertension profiles.</li>
+          <li>Mean generation time was about 0.092 seconds across required personas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>Tech Stack</h2>
+      <p class="chip-row"><span>Python</span><span>Streamlit</span><span>Pandas</span><span>USDA FoodData Central</span><span>Bloom filters</span><span>Hash embeddings</span><span>Recommendation ranking</span><span>Nutrition analytics</span></p>
+    </section>
+  </main>
+</body>
+</html>

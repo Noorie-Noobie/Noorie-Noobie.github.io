@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon Review Sentiment Triage | Arshnoor Bhatia</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary">
+    <a class="brand" href="../index.html">Arshnoor Bhatia</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="https://github.com/Noorie-Noobie">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="case-main">
+    <section class="case-hero">
+      <div>
+        <p class="eyebrow">NLP / machine learning</p>
+        <h1>Amazon Review Sentiment Triage</h1>
+        <p class="lede">An NLP classification project that auto-flags negative Amazon Health & Personal Care reviews so customer success teams can prioritize follow-up.</p>
+      </div>
+      <img class="case-image" src="../assets/sentiment-cover.png" alt="Linear SVM TF-IDF n-grams confusion matrix">
+    </section>
+
+    <section class="case-section">
+      <h2>Problem</h2>
+      <p>Brands receive more reviews than teams can manually read, so negative reviews and product-quality signals can be missed.</p>
+    </section>
+
+    <section class="case-section columns">
+      <div>
+        <h2>What I Built</h2>
+        <ul>
+          <li>Prepared binary sentiment labels by mapping 4-5 star reviews to positive and 1-2 star reviews to negative while dropping noisy 3-star reviews.</li>
+          <li>Compared Bag-of-Words, TF-IDF, n-grams, Logistic Regression, Linear SVM, and Random Forest models.</li>
+          <li>Framed the primary business metric as negative-class recall because missing unhappy customers is more costly than false alerts.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Evidence</h2>
+        <ul>
+          <li>346,355 raw reviews and 313,101 labeled reviews after preprocessing.</li>
+          <li>Modeled on a 30,000-review sample with documented class imbalance.</li>
+          <li>Generated model results, top features, EDA summary, and confusion-matrix outputs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>Tech Stack</h2>
+      <p class="chip-row"><span>Python</span><span>Jupyter</span><span>Pandas</span><span>scikit-learn</span><span>TF-IDF</span><span>n-grams</span><span>Logistic Regression</span><span>Linear SVM</span><span>Random Forest</span></p>
+    </section>
+  </main>
+</body>
+</html>
